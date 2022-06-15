@@ -13,7 +13,8 @@ def DisplayAppsUser():
     pass
 
 def Menu():
-    input= -1
-    while(input != 0):
-        pass
+    inp= -1
+    while(inp != 0):
+        print("Ingrse opcion")
+        inp = input("")
     pass
