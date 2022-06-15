@@ -3,3 +3,4 @@ Librerias utilizadas:
 -string
 -secrets
 -numpy
+-tkinter
