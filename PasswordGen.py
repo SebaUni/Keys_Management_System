@@ -5,11 +5,16 @@ from numpy import append
 _charList = "abcdefghijkmnopkrs"
 
 def Generator(len):
+    if(len(_charList)== 0):
+        _charList= string.ascii_letters + string.digits
     password= ''.join(sr.choice(_charList) for i in range(len))
     return password
 
 def PasswordsGen(leng):
     passwordList= []
+    global _charList
+    if(len(_charList)== 0):
+        _charList= string.ascii_letters + string.digits
     saved = 0
     while(saved< 10):
         generated= Generator(leng)
